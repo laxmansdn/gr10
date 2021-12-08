@@ -7,7 +7,7 @@ class AccountAdmin(UserAdmin):
     list_display = ('first_name', 'last_name', 'username', 'email', 'date_created', 'last_login', 'is_active',)
     list_display_links = ('first_name', 'last_name', 'username', 'email',)
     ordering = ('-date_created',)
-    readonly_fields = ('last_login', 'date_created',)
+    readonly_fields = ('last_login', 'date_created', 'is_active',)
 
     filter_horizontal = ()
     list_filter = ()
